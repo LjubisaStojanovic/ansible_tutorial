@@ -29,7 +29,7 @@
       state: latest
     when: ansible_distribution == "Ubuntu"
 
-  - name: add apache2 support for apache
+  - name: add apache2 support for apache web server
     dnf:
       update_cache: yes
       name: 
