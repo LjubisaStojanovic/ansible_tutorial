@@ -35,5 +35,5 @@
       name: 
         - httpd
       state: latest
-    when: ansible_distribution == "Centos"
+    when: ansible_distribution == "CentOS"
 
