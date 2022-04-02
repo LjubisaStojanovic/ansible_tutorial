@@ -29,7 +29,7 @@
       state: latest
     when: ansible_distribution == "Ubuntu"
 
-  - name: add apache2 and php support for apache
+  - name: add apache2 support for apache
     dnf:
       update_cache: yes
       name: 
