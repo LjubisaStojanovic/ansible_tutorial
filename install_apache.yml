@@ -14,8 +14,18 @@
 #      name: apache2
 #    when: ansible_distribution in ["Ubuntu", "Debian"]
 
-  - name: add php support for apache
+# - name: add php support for apache
+#   apt:
+#     name: libapache2-mod-php
+#     state: latest
+#   when: ansible_distribution == "Ubuntu"
+
+#moze i ovako 
+  - name: add apache2 and php support for apache
     apt:
-      name: libapache2-mod-php
+      name: 
+        - libapache2-mod-php
+        - apache2
       state: latest
     when: ansible_distribution == "Ubuntu"
+
